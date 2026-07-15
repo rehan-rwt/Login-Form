@@ -1,6 +1,10 @@
-export const registerUser = async (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: "Register Route Working",
-  });
-};
+import express from "express"
+import { registerUser } from "../controllers/authController"
+
+
+const router = express.Router();
+
+// Register user
+router.post("register",registerUser)
+
+export default router
