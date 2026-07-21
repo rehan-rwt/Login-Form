@@ -23,7 +23,7 @@ app.use(cors({
 app.use("/api/auth",authRoutes)
 
 app.get("/",(req,res)=>{
-    res.send("API Running   🚀 ")
+    res.send("API Running perfectly   🚀 ")
 })
 
 
